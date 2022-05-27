@@ -1,0 +1,7 @@
+
+<% movies.forEach(element => { %>
+    <img src="<%= element.image %>" alt="movie image" width="200px"/>
+   <h2> <%= element.title %> </h2>
+   <h3> Directed by: <%= element.director %> </h3>
+   <p> <%= element.description %> </p>
+<% }) %>
