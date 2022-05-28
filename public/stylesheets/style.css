@@ -16,3 +16,45 @@ a {
   height: 100vh;
   overflow: hidden;
 }
+
+.front-page {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding:10px;
+  border-radius: 20px;
+  color:rgb(118, 149, 173);
+  background-color:white;
+  margin:50px;
+
+}
+
+.front-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-lg {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+#movies-page-div {
+  margin: 10px;
+  padding: 10px;
+  max-width: 1000px;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
