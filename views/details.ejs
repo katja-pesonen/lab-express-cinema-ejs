@@ -1,0 +1,17 @@
+<h1>Movie Details:</h1>
+
+<%#!-- Details page, to show more info on the movie in question --%>
+ 
+<% movies.forEach((element) => { %>
+  <div>
+    <img src="<%= element.image %>" alt="movie image" width="200px"/>
+  </div>
+  <div>
+    <a href="/movies" >Go back</a> 
+    <h3><%= element.title %></h3>
+    <p>Director: <%= element.director %></p> 
+    <p>Stars: <%= element.stars %></p>
+    <p><%= element.description %></p>
+    <p><%= element.showtime %></p>
+  </div>
+<% }) %>
