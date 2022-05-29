@@ -1,14 +1,26 @@
-<h1>Movie Details:</h1>
-
 
 <%#!-- Details page, to show more info on the movie in question --%>
-<div id="details-page-div"></div>
-   <img src="<%= movie.image %>" alt="movie image" width="200px"/>
-   <a class="movies-link-btn" href="/movies/">Go back</a> 
-   <h2 style="font-size: 20px;"> <%= movie.title %> </h2>
-   <h3 style="font-size: 16px;">Director: <%= movie.director %> </h2>
-    <h3 style="font-size: 14px;">Stars:</h2>
-   <p> <%= movie.stars %> </p>
-   <p> <%= movie.description %> </p>
-   <p> <%= movie.showtime %> </p>
+
+<div id="details-div">
+<div class="card mb-3" style="max-width: 700px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="<%= movie.image %>" class="img-fluid rounded-start" alt="movie image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <a class="movies-link-btn" href="/movies/">Go back</a> 
+        <br />
+        <br />
+        <h5 class="card-title"> <%= movie.title %> </h5>
+        <h3 style="font-size: 16px;">Director: <%= movie.director %> </h2>
+          <br />
+          <h3 style="font-size: 14px;">Stars:</h2>
+            <p> <%= movie.stars %> </p>
+        <p class="card-text"> <%= movie.description %> </p>
+        <p class="card-text"><small class="text-muted">Showtimes: <%= movie.showtime %> </small></p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
